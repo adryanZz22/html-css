@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /* 
+        SELETORES PERSONALIZADOS
+
+           #    = ID
+           .    = CLASS
+           :    = PSEUDO-CLASS
+           ::   = PSEUDO-ELEMENT
+           >    = CLILDREN
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;/*cor da letra para sites que ainda não entrei*/
+            text-decoration: none;/*tirar linha fixa de baixo da palavra*/
+            font-weight: bold;/*negrito*/
+        }
+        a:visited {
+            color: rgb(72, 255, 0);/*indicar sites que ja foi aberto no seu pc*/
+        }
+        a:hover{
+            color:rgb(0, 238, 255);/*cor da palavra quando eu passar o mouse*/
+            text-decoration: underline;/*colocar linha em baixo da palavra quando passar o mouse*/
+        }
+        a:active {
+            color: rgb(255, 238, 0);/*cor do clique*/
+        }
+        .especial{
+            background-color: blue;/*fundo da palavra*/        }
+        .especial::before {
+                content: '♞';/*simbolo da esquerda*/
+        }
+        .especial::after {
+                content: '♞';/*simbolo da direita*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/">site fecebook</a></li><!--organizador de lista-->
+        <br><!--pular linha-->
+        <li><a href="https://www.youtube.com/" class="especial">Canal do Youtube</a></li><!--organizador de lista-->
+        <br><!--pular linha-->
+        <li><a href="https://www.instagram.com/">site do Instragram</a></li><!--organizador de lista-->
+        <br><!--pular linha-->
+    </ul><!--lista de pontos-->
+    
+</body>
+</html>

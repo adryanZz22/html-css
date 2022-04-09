@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    <hr>
+    <br>
+    <h1>AULA 1
+    </h1>
+    <br>
+    <hr>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 710px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <br>
+    <h1>AULA 2</h1>,
+    <br>
+    <hr>
+    <h1>Reproduzindo Àudio</h1>
+    <p>vamos aprender a reproduzir áudio em HTML5.</p>
+            <!--auto = ele ira carregar o site para depois tocar,metadata = vai carregar data e tempo,none = nao vai carregar nada-->
+    <audio preload="metadata"autoplay controls loop><!--loop = ira repetir a musica, controls = monstar os controles e a musica--> 
+        <source src="musica/kazoom - quincas moreira.mp3" type="audio/mpeg">
+        <source src="musica/kazoom - quincas moreira.ogg" type="audio/ogg">
+        <source src="musica/kazoom - quincas moreira.wav" type="audio/wav">
+        <source src="" type=""><!--serve para colocar a musica-->
+        <p>infelizmente seu navegador não consegue reproduzir áudio.<a href="musica/kazoom - quincas moreira.mp3">clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio><!--MP3 WAV OGG-->
+    <hr>
+    <br>
+    <h1>AULA 2</h1>
+    <br>
+    <hr>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>este video está hospedado no meu próprio servidor.</p>
+     <video controls poster="video/intro-video400-720.jpg" width="300" loop>
+         <source src="video/meuvideo.m4v.m4v" type="video/mp4">
+         <source src="video/meuvideo.mp4.mp4" type="video/mp4">
+         <source src="video/Meuvideo.webm.webm" type="video/webm">
+         <source src="video/meuvideo.ogv.ogv" type="video/ogg">
+         <p>Seu navegador não tem compatilibidade com reprodução de videos.</p>
+     </video>
+     <hr>
+     <br>
+     <h1>AULA 2</h1>
+     <br>
+     <hr>
+     <h1>Inserindo videos do Youtube</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/vscw-zFL0uI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        div{
+            margin-right: 25px;/* margin de fora lado direito*/
+            display: inline-block;/* inline/block -level */
+            height: 100px;/* altura*/
+            width: 300px;/* largura*/
+            border-width: 10px; /* borda tamanho*/
+            border-style: solid;/* borda modelo*/
+            border-color: black;/* borda cor*/
+            margin-bottom: 15px;/* margin de fora parte de baixo*/
+        }
+            
+
+        h1{
+            background-color: azure;/* cor do fundo */
+            height: 300px;/* altura*/
+            width: 300px;/* largura*/
+
+            border-width: 10px;/* borda tamanho*/
+            border-style: solid;/* borda modelo*/
+            border-color: black;/* borda cor*/
+
+                border: 10px solid black;/* borda simplificado*/
+
+            padding-top: 10px;/* afastamento das bordas/ altura*/
+            padding-right: 10px;/* afastamento das bordas/direita*/
+            padding-bottom: 10px;/* afastamento das bordas/direita*/
+            padding-left: 10px;/* afastamento das bordas/esquerda*/
+
+                padding: 10px 10px 10px 10px; /*padding simplificado*/
+            
+            margin-top: 10px;/* margin de cima*/
+            margin-right: 10px;/* margin da direita*/
+            margin-bottom: 10px;/* margin de baixo*/
+            margin-left: 10px;/* margin da esquerda*/
+
+                margin: 20px auto 40px auto;/* margin simplificado*/
+
+            outline-width: 5px;/* dentro da margin/ largura da linha*/
+            outline-style: dashed;/* dentro da margin/ largura da modelo*/
+            outline-color: salmon;/* dentro da margin/ largura da cor*/
+
+                outline: 5px dashed salmon;/* outline simplificado*/
+        }
+        .botão{
+            border-width: 10px;/* borda tamanho*/
+            border-style: solid;/* borda modelo*/
+            border-color: brown;/* borda cor*/
+
+
+            padding-top: 10px;/* afastamento das bordas/ altura*/
+            padding-right: 10px;/* afastamento das bordas/direita*/
+            padding-bottom: 10px;/* afastamento das bordas/direita*/
+            padding-left: 10px;/* afastamento das bordas/esquerda*/
+        }
+        .especial{
+            height: 200px;/* altura*/
+            width: 98%;/* largura*/
+            margin-bottom: 20px;/* margin de baixo*/
+            margin-top: 20px;/* margin de cima*/
+        }
+        img{
+            height: 200px;/* altura*/
+            width: 100%;/* largura*/
+        }
+        main{
+            background-color: rgb(0, 255, 0);/* cor do fundo */
+            width: 100px;/* altura*/
+            font-size: 35px;/*tamanho da letra*/
+            text-align: center;/*texto centralizado*/
+            margin-left: auto;/*margin centralizado*/
+            margin-bottom: 20px;/* margin de baixo*/
+            border-radius: 10px;/*borda da caixa*/
+            box-shadow: 3px 5px 1px rgb(0, 148, 20);/*sombreado*/
+            padding-bottom: 6px;/* afastamento das bordas/direita*/
+        }
+.botão02{
+    text-decoration: none;/*tirar linha de link*/
+    color: aliceblue;/*cor da letra*/
+    font-size: 25px;/*tamanho da letra*/
+    
+
+}
+    </style>
+</head>
+<body>
+    <h1>exemplo de caixa box-level</h1>
+    <p>paragrafos tambem sao exemplos de box-level, mas os <a class="botão" href="#">links sao exemplos de caixas inline-level</a>. vamos ver como tudo isso funciona.</p>
+    <img class="especial" src="4dd18ebb9e2a78c7861736bcd6245db4ec85928a_hq.jpg" alt="">
+    <img src="https://img.freepik.com/vetores-gratis/fundo-abstrato-da-onda-papel-de-parede-padrao-de-listras-capa-de-banner_206846-1183.jpg?w=900" alt="">
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <main><a class="botão02" href="index2.html">Botão</a></main>
+</body>
+</html>
